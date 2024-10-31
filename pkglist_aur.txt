@@ -1,0 +1,7 @@
+aylurs-gtk-shell
+bibata-cursor-git
+bluetui
+cava
+pwvucontrol
+yay
+yay-debug
