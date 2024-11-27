@@ -118,7 +118,6 @@
 : 1732650809:0;sudo emerge --ask --depclean media-fonts/fonts-meta
 : 1732652259:0;cd Notes
 : 1732652267:0;vim TODO.txt
-: 1732690408:0;nmcli d wifi list
 : 1732690418:0;nmcli d wifi connect Duplicate\ iPhone\ 15\ Pro\ Max --ask
 : 1732690514:0;sudo emerge --deselect dev-db/mariadb
 : 1732690537:0;sudo rc-update mysql stop
@@ -157,7 +156,6 @@
 : 1732693652:0;sudo emerge --ask --depclean
 : 1732693976:0;users
 : 1732701373:0;suvim /etc/portage/package.use
-: 1732701440:0;bluetuith
 : 1732701602:0;sudo emaint --auto sync
 : 1732701655:0;sudo emerge --ask --verbose --update --newuse --deep --with-bdeps=y @world
 : 1732701923:0;ls -al
@@ -189,8 +187,6 @@
 : 1732705319:0;postgres -U postgres -d postgres
 : 1732705327:0;psql -U postgres -d postgres
 : 1732705482:0;psql -U chris -d postgres
-: 1732705536:0;loginctl poweroff
-: 1732726687:0;hyprup
 : 1732726697:0;y
 : 1732726732:0;dc hypr
 : 1732726735:0;ls hypr
@@ -202,7 +198,6 @@
 : 1732726830:0;l
 : 1732726873:0;cd scripts/
 : 1732726873:0;vim xdg-desktop-hyprland 
-: 1732726873:0;cd ..
 : 1732726873:0;rm -rf scripts/
 : 1732726857:0;mkdir scripts/
 : 1732726861:0;mv xdg-desktop-hyprland scripts
@@ -212,27 +207,33 @@
 : 1732726888:0;cd scripts
 : 1732726906:0;cp ~/.config/hypr/scripts/xdg-desktop-hyprland ./
 : 1732726913:0;chmod -x xdg-desktop-hyprland
-: 1732726921:0;cd Git
-: 1732726924:0;cd GentooDots
 : 1732726926:0;la
-: 1732726931:0;git add .
 : 1732726940:0;git commit -m "Hyprland config added"
-: 1732726942:0;git push
-: 1732727132:0;clear
-: 1732727137:0;cd 
 : 1732727140:0;cd .config
 : 1732727185:0;cd waybar
-: 1732727186:0;ls
 : 1732727187:0;vim config.jsonc
 : 1732727190:0;vi style.css
-: 1732727219:0;waybar
-: 1732727229:0;exit
-: 1732727264:0;waybar
-: 1732727552:0;clear
-: 1732727557:0;cd Git
-: 1732727557:0;ls
-: 1732727559:0;cd GentooDots
-: 1732727559:0;ls
-: 1732727561:0;cd dotconfig
-: 1732727561:0;ls
 : 1732727576:0;cp -r ~/.config/zsh ./
+: 1732727578:0;cd 
+: 1732727580:0;cd Git
+: 1732727582:0;cd GentooDots
+: 1732727596:0;git commit -m "Added zsh config"
+: 1732727890:0;cd dotconfig
+: 1732727902:0;cp -r ~/.config/waybar ./
+: 1732727911:0;cd ..
+: 1732727915:0;git add .
+: 1732727961:0;git commit -m "Waybar added"
+: 1732727964:0;git push
+: 1732728171:0;nmcli d wifi rescan
+: 1732728425:0;ls
+: 1732728429:0;vim .config/waybar
+: 1732728545:0;bluetuith
+: 1732729459:0;waybar
+: 1732731245:0;loginctl poweroff
+: 1732738158:0;hyprup
+: 1732738182:0;nmcli d wifi list
+: 1732738192:0;clea
+: 1732738193:0;clear
+: 1732738195:0;exit
+: 1732738272:0;ls
+: 1732738276:0;y
