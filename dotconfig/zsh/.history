@@ -1,0 +1,238 @@
+: 1732603719:3;vim .history
+: 1732603724:2;rm .history
+: 1732604499:0;touch hello.c
+: 1732604502:0;vim hello.c
+: 1732604551:0;gcc hello.c
+: 1732604556:0;./a.out
+: 1732604563:0;rm hello.c
+: 1732604566:0;rm a.out
+: 1732604632:0;chmod -x *
+: 1732604645:0;chmod -x scripts
+: 1732604731:0;git clone git@github.com:rachitve6h2g/ArchDots.git
+: 1732604812:0;cd config_home
+: 1732604842:0;git clone https://github.com/rachitve6h/ArchDots.git
+: 1732604861:0;git clone https://github.com/rachitve6h2g/ArchDots.git
+: 1732604874:0;rm -rf ArchDots
+: 1732604876:0;clera
+: 1732604910:0;mkdir hypr.bak
+: 1732604912:0;cd hypr.bak
+: 1732604922:0;touch hyprland.conf
+: 1732604928:0;rm hyprland.conf
+: 1732604988:0;pwd
+: 1732605018:0;touch hello.conf
+: 1732605021:0;rm hello.conf
+: 1732602900:0;cd .config/zsh/
+: 1732602902:0;lls
+: 1732605096:0;cd zsh
+: 1732605099:0;vim .zshrc
+: 1732605179:0;cd G
+: 1732605188:0;ls 
+: 1732603251:57;vim antigen.zsh
+: 1732603312:0;..
+: 1732605365:0;cd ArchDots
+: 1732605368:0;s
+: 1732605376:0;cd Sway
+: 1732605387:0;git add *
+: 1732605423:0;git commit Sway/ -m "Sway config"
+: 1732605448:0;git config --global user.email "rachitverma1122@gmail.com"
+: 1732605465:0;git config --globla user.name "rachitve6h2g"
+: 1732605497:0;git config --global user.name "rachitve6h2g"
+: 1732605511:0;git commit -m "Sway only"
+: 1732605528:0;l;s
+: 1732605693:0;hello
+: 1732605718:0;omz relaod
+: 1732605721:0;omz reload
+: 1732605742:0;sudo eclean --deep distfiles
+: 1732605786:0;sudo emerge --ask --verbose --update --deep --newuse --with-bdeps=y @world
+: 1732605935:0;cava
+: 1732606254:0;clearw
+: 1732607077:0;cd .config/waybar
+: 1732607079:0;vim mocha.css
+: 1732608061:0;cd ../hypr
+: 1732608403:0;vim hyprpaper.conf
+: 1732628982:0;rm -rf hypr.bak
+: 1732628985:0;celar
+: 1732630144:0;vim hypridle.conf
+: 1732630216:0;loginctl lock-session
+: 1732631814:0;sudo emerge --ask --verbose --update --deep --changed-use --with-bdeps=y @world
+: 1732632293:0;sudo eselect --depclean
+: 1732632305:0;sudo emerge --depclean
+: 1732633704:0;vim .config/hypr/hyprland.conf
+: 1732633857:0;loginctl suspend
+: 1732637574:0;sudo echo GentooBTW > /etc/hostname
+: 1732637601:0;echo GentooBTW > /etc/hostname
+: 1732637606:0;loginctl reboot
+: 1732637768:0;suvim /etc/conf.d/hostname
+: 1732637780:0;clewar
+: 1732637790:0;sudo rc-service hostname restart
+: 1732639003:0;vi hyprland.conf
+: 1732639264:0;equery h bluray
+: 1732639278:0;vim make.
+: 1732639283:0;suvim make.conf
+: 1732639466:0;equery h cdrom
+: 1732639507:0;sudo lspci | grep -E "IDE|SATA"
+: 1732639767:0;bat $(eselect fontconfig list)
+: 1732639791:0;eselect fontconfig list | less
+: 1732639867:0;emerge --search media-fonts/noto
+: 1732639904:0;sudo emerge --ask --verbsoe media-fonts/fonts-meata
+: 1732639910:0;sudo emerge --ask --verbsoe media-fonts/fonts-meta
+: 1732639963:0;vim package.mask
+: 1732639975:0;suvim package.mask
+: 1732640091:0;sudo emerge --ask --verbose media-fonts/fonts-meta
+: 1732640361:0;adb server
+: 1732640469:0;btop
+: 1732641401:0;htop
+: 1732643667:0;zathura 'Silberschatz-Database System Concepts 6th ed.pdf'
+: 1732644483:0;xdg-mime query filetype AI\ and\ the\ End\ of\ Humanity\ by\ Unknown.pdf
+: 1732644662:0;xdg-mime default org.pwmt.zathura-pdg-mupdf.desktop application/pdf
+: 1732644877:0;xdg-mime default org.pwmt.zathura-pdf-mupdf.desktop application/pdf
+: 1732644945:0;xdg-mime query default application/pdf
+: 1732647402:0;sudo eselect fontconfig enable 10-powerline-symbols.conf
+: 1732647444:0;sudo eselect fontconfig enable 59-google-droid-sans-mono.conf
+: 1732647514:0;sudo eselect fontconfig enable 80-odofonts-simulate-MS-triditional-chinese.conf
+: 1732647539:0;sudo eselect fontconfig enable 69-odofonts.conf
+: 1732647552:0;sudo eselect fontconfig enable 60-mikachan_o.conf
+: 1732647594:0;sudo eselect fontconfig enable 44-wqy-zenhei-sharp.conf
+: 1732647601:0;sudo eselect fontconfig enable 43-wqy-zenhei-sharp.conf
+: 1732647635:0;sudo eselect fontconfig enable 57-dejavu-sans-mono.conf
+: 1732647683:0;sudo emerge --depclean --with-bdeps=y
+: 1732648710:0;fastfetch
+: 1732648718:0;cd .config/zsh
+: 1732648724:0;vim aliases.zsh
+: 1732648806:0;ffetch
+: 1732649190:0;nmcli d wifi connect Komal\'s\ Galaxy\ M52\ 5G --ask
+: 1732649375:0;emerge --search whatsapp
+: 1732649477:0;equery uses net-im/mautrix-whatsapp
+: 1732649499:0;sudo emerge --ask net-im/mautrix-whatsapp
+: 1732650091:0;cd .local/share/
+: 1732650138:0;mkdir applications/
+: 1732650143:0;cd applications
+: 1732650155:0;vim whatsapp.desktop
+: 1732650266:0;cleare
+: 1732650394:0;cd .local/share/applications
+: 1732650401:0;vim notion.desktop
+: 1732650571:0;suvim package.
+: 1732650636:0;eselect fontconfig list
+: 1732650698:0;sudo emerge --ask --verbose media-fonts/noto
+: 1732650786:0;sudo emerge --deselect media-fonts/fonts-meta
+: 1732650809:0;sudo emerge --ask --depclean media-fonts/fonts-meta
+: 1732652259:0;cd Notes
+: 1732652267:0;vim TODO.txt
+: 1732690408:0;nmcli d wifi list
+: 1732690418:0;nmcli d wifi connect Duplicate\ iPhone\ 15\ Pro\ Max --ask
+: 1732690514:0;sudo emerge --deselect dev-db/mariadb
+: 1732690537:0;sudo rc-update mysql stop
+: 1732690554:0;sudo rc-service mysql stop
+: 1732690569:0;sudo rc-update del mysql default
+: 1732690605:0;sudo emerge --ask --verbose --depclean && sudo eclean --deep --ask distfiles
+: 1732690632:0;cd /var/log
+: 1732690633:0;;s
+: 1732690639:0;bat messages
+: 1732691555:0;sudo emerge --deselect net-im/mautrix-whatsapp
+: 1732691568:0;bat syslog
+: 1732691600:0;adb start-server
+: 1732691608:0;adb kill-server
+: 1732691651:0;adb usb
+: 1732691654:0;adb devices
+: 1732691660:0;scrcpy
+: 1732692059:0;bat /var/lib/portage/world
+: 1732692118:0;cd /usr/bin
+: 1732692125:0;ls | :B
+: 1732692131:0;ls | less
+: 1732692153:0;cd ~/.local/bin
+: 1732692183:0;cd contrib_hyprland
+: 1732692194:0;cd /
+: 1732692220:0;cd /usr/local/bin
+: 1732692417:0;vim hyprland.conf
+: 1732692472:0;cllear
+: 1732692508:0;vim package.use
+: 1732692557:0;equery uses dev-db/postgresql
+: 1732692831:0;sudo emerge --ask --verbose dev-db/postgresql
+: 1732692865:0;cd /etc/portage
+: 1732692873:0;vim make.conf
+: 1732693287:0;suvim .
+: 1732693313:0;suvim package.use
+: 1732693573:0;bluetoothctl scan off
+: 1732693640:0;mariadb_config
+: 1732693652:0;sudo emerge --ask --depclean
+: 1732693976:0;users
+: 1732701373:0;suvim /etc/portage/package.use
+: 1732701440:0;bluetuith
+: 1732701602:0;sudo emaint --auto sync
+: 1732701655:0;sudo emerge --ask --verbose --update --newuse --deep --with-bdeps=y @world
+: 1732701923:0;ls -al
+: 1732702502:0;echo $PGDATA
+: 1732702504:0;cler
+: 1732703109:0;cd Linux
+: 1732703115:0;vim Notes/TODO.txt
+: 1732703980:0;cd /etc/conf.d
+: 1732703984:0;vim postgresql-17
+: 1732704025:0;cd /usr/share
+: 1732704030:0;cd postgresql
+: 1732704058:0;cd /etc/postgresql-17
+: 1732704155:0;nano --help
+: 1732704167:0;man nano
+: 1732704217:0;suvim pg_hba.conf
+: 1732704307:0;sudo emerge --config dev-db/postgresql
+: 1732704414:0;sudo /etc/init.d/postgresql-17 start
+: 1732704435:0;sudo psql -U postgres
+: 1732704506:0;vim /etc/postgresql-17/pg_hba.conf
+: 1732704515:0;suvim /etc/postgresql-17/pg_hba.conf
+: 1732704583:0;sudo /etc/init.d/postgresql-17 reload
+: 1732704598:0;sudo rc-update add postgresql-17 default
+: 1732704669:0;postgres
+: 1732704842:0;psql -u postgres
+: 1732704855:0;psql -U postgres
+: 1732705131:0;vim /etc/hosts
+: 1732705144:0;suvim /etc/hosts
+: 1732705239:0;psql 
+: 1732705319:0;postgres -U postgres -d postgres
+: 1732705327:0;psql -U postgres -d postgres
+: 1732705482:0;psql -U chris -d postgres
+: 1732705536:0;loginctl poweroff
+: 1732726687:0;hyprup
+: 1732726697:0;y
+: 1732726732:0;dc hypr
+: 1732726735:0;ls hypr
+: 1732726740:0;cd .conf
+: 1732726762:0;su
+: 1732726771:0;cd
+: 1732726774:0;cd .config/hypr
+: 1732726787:0;vim xdg-desktop-hyprland
+: 1732726830:0;l
+: 1732726873:0;cd scripts/
+: 1732726873:0;vim xdg-desktop-hyprland 
+: 1732726873:0;cd ..
+: 1732726873:0;rm -rf scripts/
+: 1732726857:0;mkdir scripts/
+: 1732726861:0;mv xdg-desktop-hyprland scripts
+: 1732726870:0;chmod +x xdg-desktop-hyprland
+: 1732726882:0;cd GentooDots/dotconfig
+: 1732726886:0;cd hypr
+: 1732726888:0;cd scripts
+: 1732726906:0;cp ~/.config/hypr/scripts/xdg-desktop-hyprland ./
+: 1732726913:0;chmod -x xdg-desktop-hyprland
+: 1732726921:0;cd Git
+: 1732726924:0;cd GentooDots
+: 1732726926:0;la
+: 1732726931:0;git add .
+: 1732726940:0;git commit -m "Hyprland config added"
+: 1732726942:0;git push
+: 1732727132:0;clear
+: 1732727137:0;cd 
+: 1732727140:0;cd .config
+: 1732727185:0;cd waybar
+: 1732727186:0;ls
+: 1732727187:0;vim config.jsonc
+: 1732727190:0;vi style.css
+: 1732727219:0;waybar
+: 1732727229:0;exit
+: 1732727264:0;waybar
+: 1732727552:0;clear
+: 1732727557:0;cd Git
+: 1732727557:0;ls
+: 1732727559:0;cd GentooDots
+: 1732727559:0;ls
+: 1732727561:0;cd dotconfig
+: 1732727561:0;ls
+: 1732727576:0;cp -r ~/.config/zsh ./
