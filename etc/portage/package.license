@@ -1,0 +1,4 @@
+sys-kernel/linux-firmware linux-fw-redistributable
+sys-firmware/intel-firmware intel-ucode
+media-fonts/mikachan-font-otf free-noncomm
+www-plugins/chrome-binary-plugins google-chrome

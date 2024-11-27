@@ -1,0 +1,153 @@
+*/* kerberos
+sys-kernel/linux-firmware compress-zstd savedconfig
+sys-kernel/installkernel dracut grub
+sys-kernel/gentoo-kernel savedconfig modules-compress
+app-admin/eclean-kernel zstd
+sys-kernel/gentoo-sources symlink
+net-misc/networkmanager nftables policykit
+net-wireless/wpa_supplicant dbus
+app-admin/sysklogd logger
+sys-apps/util-linux -logger
+app-admin/sudo offensive
+dev-vcs/git highlight
+sys-auth/seatd server builtin
+gui-apps/swaybg gdk-pixbuf
+media-libs/vulkan-loader layers 
+
+
+# For waybar
+gui-apps/waybar network pipewire tray wifi evdev
+media-libs/mesa osmesa X
+
+# Sound
+media-video/pipewire sound-server modemmanager gstreamer ffmpeg extra dbus pipewire-alsa
+media-video/ffmpeg vaapi vdpau webp svg cpudetection fontconfig libdrm mp3 openh264 qsv 
+dev-libs/libdbusmenu gtk3
+media-sound/pulseaudio -daemon
+
+# Fastfetch
+app-misc/fastfetch drm imagemagick osmesa 
+media-gfx/imagemagick fontconfig jpeg svg webp zip xml 
+
+# The TOPS
+sys-process/htop lm-sensors
+
+# The nerd fonts from the GURU overlay
+media-fonts/nerdfonts jetbrainsmono
+
+# For image supports 
+media-gfx/imv heif jpeg jpegxl png svg 
+x11-libs/gdk-pixbuf jpeg
+
+# For Browsers 
+# The below settings are purely for qutebrowser
+# see if qutebrowser can be build purely with vulkan only 
+dev-qt/qtwebengine vaapi opengl qml
+sys-libs/zlib minizip
+dev-libs/libxml2 icu
+dev-qt/qtwayland compositor
+dev-qt/qtbase icu X libproxy opengl
+dev-qt/qttools opengl
+dev-qt/qtdeclarative opengl
+media-libs/libglvnd X
+media-libs/libva X
+www-client/qutebrowser widevine
+# For firefox
+www-client/firefox pgo lto openh264 dbus geckodriver hardened hwaccel libproxy screencast wifi -telemetry
+media-libs/libvpx postproc
+
+# For mpv 
+media-video/mpv jpeg pipewire vaapi -egl 
+dev-libs/libtomcrypt -libtommath # for yt-dlp, used for playing yt vids on mpv
+
+# for PcMANFm
+#x11-libs/libfm gtk UNINSTALL_IGNORE: $UNINSTALL_IGNORE /usr/include/libfm
+#app-crypt/gcr gtk
+#gnome-base/gvfs mtp -http
+#media-libs/libmtp -crypt
+#app-crypt/libsecret -crypt -gcrypt
+#gnome-base/gnome-keyring -ssh-agent
+
+# For thunar
+net-libs/glib-networking -libproxy
+x11-libs/cairo X
+x11-libs/gtk+ X
+dev-cpp/cairomm X
+dev-cpp/gtkmm X
+media-libs/libepoxy X
+app-crypt/gcr gtk
+gnome-base/gnome-keyring -ssh-agent
+gnome-base/gvfs mtp udisks -http
+xfce-base/xfce4-panel -dbusmenu
+xfce-base/thunar exif udisks
+net-print/cups usb
+xfce-base/tumbler epub ffmpeg jpeg pdf
+media-video/ffmpegthumbnailer jpeg png
+app-text/poppler cairo png
+
+
+# For clipboard
+app-text/xmlto text
+
+# For zathura
+app-text/zathura -seccomp
+app-text/zathura-meta cb
+media-libs/jbig2dec png
+
+# Fonts 
+media-fonts/noto-emoji icons
+media-fonts/noto cjk
+
+# Editors
+app-editors/neovim -nvimpager
+app-editors/vscodium egl
+
+# For better man-pages and a better tail -f 
+dev-libs/libgit2 -ssh threads
+
+
+# For screenshots utility
+gui-apps/grim jpeg
+
+# Bluetooth support 
+net-wireless/bluez experimental man midi 
+
+# For j4-dmenu-desktop
+x11-misc/dmenu savedconfig
+
+# For cronjobs 
+sys-process/cronie -inotify
+
+# For nvme information and stuff
+dev-lang/swig ccache
+sys-apps/nvme-cli pdc
+
+# Libreoffice
+dev-libs/xmlsec nss
+media-libs/harfbuzz icu
+
+# For simple headless java 
+# see the Gentoo wiki for a gui based JVM
+virtual/jdk headless-awt
+dev-java/openjdk headless-awt -alsa -cups
+
+# For scrcpy and adb
+media-libs/libsdl2 gles2 X -joystic -haptic
+
+# Kdeconnect
+dev-qt/qt5compat qml icu
+dev-qt/qtmultimedia qml opengl X
+x11-libs/libxkbcommon X
+kde-frameworks/kconfig qml
+kde-frameworks/kwindowsystem X
+kde-frameworks/sonnet qml
+media-libs/libcanberra alsa
+kde-frameworks/kconfig dbus
+sys-auth/polkit-qt qt6
+dev-qt/qtgui egl
+dev-qt/qtquick3d opengl
+# kde-frameworks/kio X
+dev-qt/qtwebchannel qml
+
+# for postgresql 
+dev-db/postgresql uuid

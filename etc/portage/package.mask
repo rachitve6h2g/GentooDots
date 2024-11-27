@@ -1,0 +1,3 @@
+app-text/zathura-pdf-poppler
+sys-apps/sdparm
+sys-apps/hdparm
