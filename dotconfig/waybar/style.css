@@ -1,0 +1,191 @@
+@import "mocha.css";
+*{
+  font-family: 'JetBrainsMono Nerd Font Propo';
+  font-size: 12pt;
+  min-height: 0;
+  border-radius: 0;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 15px;
+  border: 2px solid @green;
+}
+
+#window {
+  border-radius: 20px;
+  color: @text;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+window#waybar {
+  background-color: @base;
+  color: @text;
+}
+
+/*#workspaces {
+  padding: 1px 1px 1px 1px;
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}*/
+
+
+#workspaces button {
+  padding: 1px;
+  background:none;
+  color: @peach;
+  border: none;
+}
+
+#workspaces button.visible {
+  color: @peach;
+}
+
+#workspaces button.empty {
+  color: @subtext0;
+}
+
+#workspaces button.active {
+  color: @yellow;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#workspaces button:hover{
+  border-radius: 50px;
+  background: @overlay0;
+  color: @yellow;
+}
+
+.modules-left {
+  background: linear-gradient(45deg, @base, @base) padding-box, linear-gradient(45deg, @blue, @mauve) border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  color: @text;
+  margin: 10px 0 10px 5px;
+  padding: 5px;
+}
+
+.modules-center {
+  background: linear-gradient(180deg, @base, @base) padding-box, linear-gradient(180deg, @mauve, @blue) border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  color: inherit;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+}
+
+.modules-right {
+  background: linear-gradient(135deg, @base, @base) padding-box, linear-gradient(135deg, @blue, @mauve) border-box;
+  border: 2px solid transparent; 
+  border-radius: 25px;
+  color: inherit;
+  margin: 10px 5px 10px 0;
+  padding: 5px;
+}
+
+#custom-notifications,
+#clock,
+#idle_inhibitor,
+#keyboard-state,
+#battery,
+#power-profiles-daemon,
+#backlight,
+#network,
+#wireplumber,
+#cpu,
+#memory,
+#custom-power {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#idle_inhibitor.activated {
+  color: @red;
+}
+#idle_inhibitor.deactivated {
+  color: @yellow;
+}
+
+#custom-notifications {
+  font-family: "Iosevka Nerd Font Propo";
+}
+#custom-power {
+  color: @red;
+  border-radius: 25px;
+  background: @overlay0;
+  padding: 1px;
+}
+
+@keyframes blink_good {
+    to {
+        background-color: @base;
+        color: @teal;
+    }
+}
+#battery.charging {
+  color: @green;
+}
+#battery.good.charging {
+    background-color: @teal;
+    border-radius: 25px;
+    padding: 0px 5px;
+    color: @base;
+    animation-name: blink_good;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    to {
+        background-color: @base;
+        color: @red;
+    }
+}
+#battery.critical:not(.charging) {
+    background-color: @red;
+    border-radius: 25px;
+    padding: 0px 5px;
+    color: @base;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink_warning {
+  to {
+    background-color: @base;
+    color: @yellow;
+  }
+}
+
+#battery.warning:not(.charging) {
+    background-color: @yellow;
+    border-radius: 25px;
+    padding: 0px 5px;
+    color: @base;
+    animation-name: blink_warning;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#submap.resize {
+  color: @red;
+}
+
+#bluetooth.off {
+  color: @peach;
+}
+#bluetooth.on {
+  color: @green;
+}
