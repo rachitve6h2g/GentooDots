@@ -1,0 +1,3 @@
+# I must enable the ~arch flag for all guru packages,
+# So better do this. (Read https://wiki.gentoo.org/wiki/Project:GURU#The_regulations).
+*/*::guru ~amd64

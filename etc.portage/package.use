@@ -1,0 +1,166 @@
+# Important notes:
+# don't disable the pam module for any package once it's been 
+# compiled with it. That can lock you out of your system.
+# ________       ___    ___ ________  _________  _______   _____ ______      
+#|\   ____\     |\  \  /  /|\   ____\|\___   ___\\  ___ \ |\   _ \  _   \    
+#\ \  \___|_    \ \  \/  / | \  \___|\|___ \  \_\ \   __/|\ \  \\\__\ \  \   
+# \ \_____  \    \ \    / / \ \_____  \   \ \  \ \ \  \_|/_\ \  \\|__| \  \  
+#  \|____|\  \    \/  /  /   \|____|\  \   \ \  \ \ \  \_|\ \ \  \    \ \  \ 
+#    ____\_\  \ __/  / /       ____\_\  \   \ \__\ \ \_______\ \__\    \ \__\
+#   |\_________\\___/ /       |\_________\   \|__|  \|_______|\|__|     \|__|
+#   \|_________\|___|/        \|_________|                                                                                                
+#    ___       _______   ___      ___ _______   ___          
+#   |\  \     |\  ___ \ |\  \    /  /|\  ___ \ |\  \         
+#   \ \  \    \ \   __/|\ \  \  /  / | \   __/|\ \  \        
+#    \ \  \    \ \  \_|/_\ \  \/  / / \ \  \_|/_\ \  \       
+#     \ \  \____\ \  \_|\ \ \    / /   \ \  \_|\ \ \  \____  
+#      \ \_______\ \_______\ \__/ /     \ \_______\ \_______\
+#       \|_______|\|_______|\|__|/       \|_______|\|_______|
+#                                                            
+sys-kernel/linux-firmware compress-zstd savedconfig 
+sys-kernel/installkernel grub dracut
+sys-apps/portage xattr
+sys-kernel/gentoo-kernel savedconfig
+sys-kernel/gentoo-sources symlink
+sys-apps/systemd curl policykit
+app-admin/eclean-kernel zstd
+
+
+#
+#
+# ________  _________  ___  ___  _______   ________          ________  _________  ___  ___  ________ ________ 
+#|\   __  \|\___   ___\\  \|\  \|\  ___ \ |\   __  \        |\   ____\|\___   ___\\  \|\  \|\  _____\\  _____\
+#\ \  \|\  \|___ \  \_\ \  \\\  \ \   __/|\ \  \|\  \       \ \  \___|\|___ \  \_\ \  \\\  \ \  \__/\ \  \__/ 
+# \ \  \\\  \   \ \  \ \ \   __  \ \  \_|/_\ \   _  _\       \ \_____  \   \ \  \ \ \  \\\  \ \   __\\ \   __\
+#  \ \  \\\  \   \ \  \ \ \  \ \  \ \  \_|\ \ \  \\  \|       \|____|\  \   \ \  \ \ \  \\\  \ \  \_| \ \  \_|
+#   \ \_______\   \ \__\ \ \__\ \__\ \_______\ \__\\ _\         ____\_\  \   \ \__\ \ \_______\ \__\   \ \__\ 
+#    \|_______|    \|__|  \|__|\|__|\|_______|\|__|\|__|       |\_________\   \|__|  \|_______|\|__|    \|__| 
+#                                                              \|_________|                                   
+#                                                                                                             
+net-misc/networkmanager nftables
+app-admin/sudo offensive
+app-text/xmlto text
+gui-apps/fuzzel png svg
+
+# Firefox optimizations
+www-client/firefox hwaccel openh264 pgo system-png wifi libproxy -telemetry
+media-libs/libvpx postproc
+media-libs/libpng apng
+
+# For opengl integration
+# Build mesa without vaapi to avoid the 
+# unneccessary warning that it ignores vaapi
+media-libs/mesa -vaapi X lm-sensors
+media-libs/libglvnd X
+
+# Required by x11-libs/libnotify
+x11-libs/gtk+ X
+media-libs/libepoxy X
+x11-libs/cairo X
+
+# For imv
+media-gfx/imv jpeg png svg
+media-libs/freeimage webp
+
+# For waybar
+gui-apps/waybar network wifi upower
+
+# Zathura the pdf reader
+app-text/zathura-meta cb epub
+app-text/zathura synctex
+x11-libs/gdk-pixbuf jpeg
+media-libs/harfbuzz icu
+dev-libs/girara libnotify
+
+# Pipewire
+media-video/pipewire sound-server ffmpeg modemmanager pipewire-alsa extra
+
+# Bluetooth
+net-wireless/bluez experimental
+
+# Fonts
+media-fonts/nerdfonts iosevka iosevkaterm
+media-fonts/noto cjk
+media-fonts/noto-emoji icons
+
+# Hyprpolkitagent
+sys-auth/polkit-qt qt6
+kde-frameworks/sonnet qml
+dev-qt/qt5compat qml icu
+dev-qt/qtbase icu opengl accessibility libproxy X eglfs
+dev-qt/qttools opengl
+dev-qt/qtdeclarative accessibility opengl
+dev-qt/qtgui egl
+
+# Fasfetch
+app-misc/fastfetch ddcutil imagemagick
+
+# For yazi filemanager
+media-video/ffmpegthumbnailer jpeg png
+
+# For thunar
+xfce-base/thunar exif libnotify udisks
+xfce-base/thunar-volman libnotify
+gnome-base/gvfs udisks mtp policykit
+dev-libs/libdbusmenu gtk3
+app-crypt/gcr gtk
+dev-cpp/cairomm X
+dev-cpp/gtkmm X
+
+xfce-base/tumbler curl epub ffmpeg jpeg pdf
+app-text/poppler cairo
+
+# For zip files
+app-arch/p7zip rar
+
+# For FLATPAK
+sys-apps/flatpak introspection policykit systemd seccomp
+
+# For celluloid
+dev-libs/libxmlb -lzma
+
+# Screenshots
+gui-apps/grim jpeg
+
+# Printing support
+net-print/cups usb
+net-print/cups-meta pdf
+# Because I enabled the pdf flag in cups-meta
+net-print/libcupsfilters pdf
+app-text/ghostscript-gpl cups
+# For HP printers, I guess...
+net-print/hplip libnotify -snmp
+
+# LibreOffice, the better office suite
+app-office/libreoffice postgres pdfimport -mariadb
+dev-libs/xmlsec nss
+dev-db/postgresql kerberos
+
+# Kdeconnect
+dev-qt/qtmultimedia opengl qml X eglfs
+kde-frameworks/kconfig 	qml
+kde-frameworks/kwindowsystem X
+x11-libs/libxkbcommon X
+sys-libs/zlib minizip
+dev-qt/qtquick3d opengl
+
+# For Aylur's gtk shell building
+# The below install astal
+dev-lang/vala valadoc
+media-libs/gd fontconfig truetype
+gui-libs/gtk-layer-shell vala introspection
+
+# GAMING
+games-strategy/0ad nvtt 
+x11-libs/wxGTK X opengl
+
+# Random
+media-libs/libcanberra alsa
+dev-qt/qtwayland accessibility
+media-video/ffmpeg mp3 vorbis sdl vpx
+media-libs/libsdl2 gles2 opengl X
+sys-process/htop lm-sensors
+sys-apps/lm-sensors contrib sensord
+
+# Experimentaion (--oneshot flag used)
+sys-apps/fwupd nvme modemmanager uefi policykit gnutls
