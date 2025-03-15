@@ -1,0 +1,46 @@
+# Misc packages
+app-shells/zsh-autosuggestions::guru ~amd64
+mpv-plugin/mpv-mpris::guru ~amd64
+app-misc/brightnessctl::guru ~amd64
+media-fonts/nerdfonts::guru ~amd64
+app-misc/yazi::guru ~amd64
+x11-themes/catppuccin-btop::guru ~amd64
+app-misc/cliphist::guru ~amd64
+
+gui-apps/aylurs-gtk-shell::guru ~amd64
+
+# For hyprland ecosystem
+gui-apps/hyprlock::guru ~amd64
+gui-apps/hypridle::guru ~amd64
+gui-apps/hyprpaper::guru ~amd64
+gui-libs/xdg-desktop-portal-hyprland::guru ~amd64
+dev-cpp/sdbus-c++::gentoo ~amd64
+dev-libs/hyprgraphics::gentoo ~amd64
+dev-libs/hyprlang::gentoo ~amd64
+sys-auth/hyprpolkitagent::guru ~amd64
+gui-libs/hyprland-qt-support::guru ~amd64
+gui-apps/hyprsunset::guru ~amd64
+gui-apps/hyprshot::guru ~amd64
+gui-apps/hyprpicker::guru ~amd64
+
+net-wireless/bluetui::lamdness ~amd64
+
+
+dev-util/github-cli::gentoo ~amd64
+app-shells/zoxide::gentoo ~amd64
+media-libs/libva-intel-media-driver::gentoo ~amd64
+media-libs/gmmlib::gentoo ~amd64
+app-portage/fetchcommandwrapper::gentoo ~amd64
+
+# For taskwarrior
+app-misc/vit::gentoo ~amd64
+dev-python/tasklib::gentoo ~amd64
+app-misc/taskd::gentoo ~amd64
+
+
+# Required by widvine in qutebrowser
+www-plugins/chrome-binary-plugins::gentoo ~amd64
+
+# From my repo
+app-misc/uwsm::local ~amd64
+app-shells/fast-syntax-highlighting::local ~amd64

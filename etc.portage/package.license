@@ -1,2 +1,11 @@
 sys-kernel/linux-firmware linux-fw-redistributable
-sys-firmware/intel-firmware intel-ucode
+sys-firmware/intel-microcode intel-ucode
+
+# Required by qutebrowser widevine plugin
+www-plugins/chrome-binary-plugins::gentoo google-chrome
+
+# My own ebuilds
+app-shells/fast-syntax-highlighting::local BSD-3-Clause
+
+# For intel media driver
+media-libs/libva-intel-media-driver::gentoo no-source-code
