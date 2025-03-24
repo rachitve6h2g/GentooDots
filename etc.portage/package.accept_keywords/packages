@@ -44,3 +44,20 @@ www-plugins/chrome-binary-plugins::gentoo ~amd64
 # From my repo
 app-misc/uwsm::local ~amd64
 app-shells/fast-syntax-highlighting::local ~amd64
+
+# For swayWM
+x11-misc/i3status-rust::guru ~amd64
+gui-apps/wlsunset::guru ~amd64
+gui-apps/swaylock-effects::guru ~amd64
+gui-apps/wev::guru ~amd64
+
+# Iwd gtk client
+net-wireless/iwgtk ~amd64
+
+# Trying out ghostty
+x11-terms/ghostty::gentoo ~amd64
+x11-terms/ghostty-terminfo::gentoo ~amd64
+dev-lang/zig::gentoo ~amd64
+
+# For the snapshots system
+app-backup/grub-btrfs::guru ~amd64

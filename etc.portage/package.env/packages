@@ -1,3 +1,4 @@
 dev-qt/qtwebengine makeopts-jobs-10.conf
-app-office/libreoffice ccache.conf
 sys-kernel/gentoo-kernel monster.conf
+sys-devel/gcc monster.conf
+

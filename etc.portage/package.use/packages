@@ -1,8 +1,9 @@
-sys-kernel/installkernel grub dracut
+sys-kernel/installkernel grub ugrd
 sys-kernel/gentoo-kernel modules-compress
 sys-kernel/linux-firmware compress-zstd savedconfig
 sys-boot/grub -device-mapper -themes
 sys-apps/systemd policykit
+sys-apps/util-linux slang
 
 
 net-misc/networkmanager iwd nftables
@@ -17,7 +18,6 @@ media-fonts/noto cjk -extra
 ## GURU ##
 gui-wm/river::guru man
 
-gui-apps/wbg::guru jpeg png
 
 media-fonts/nerdfonts::guru iosevkaterm
 
@@ -42,14 +42,14 @@ app-text/xmlto text
 
 # For swayWM
 gui-apps/swaybg gdk-pixbuf
-x11-libs/gdk-pixbuf jpeg
 
 # Misc
 media-libs/libcanberra alsa
 
-media-gfx/imv jpeg png -freeimage
+media-gfx/imv -freeimage
 
 app-misc/fastfetch chafa imagemagick
+media-gfx/imagemagick xml
 
 app-text/zathura-meta cb
 app-text/poppler cairo
@@ -58,7 +58,7 @@ app-crypt/gcr gtk
 
 # For thunar
 xfce-base/thunar udisks -trash-panel-plugin
-xfce-base/tumbler epub pdf ffmpeg jpeg
+xfce-base/tumbler epub pdf ffmpeg 
 x11-libs/gtk+ X
 media-libs/libepoxy X
 gnome-base/gvfs udisks mtp
@@ -84,3 +84,14 @@ app-office/libreoffice googledrive postgres java -mariadb
 dev-libs/xmlsec nss
 media-libs/harfbuzz icu
 dev-db/postgresql kerberos
+
+media-libs/mesa -llvm
+
+x11-terms/ghostty man -adwaita
+media-libs/freetype harfbuzz
+
+media-sound/pavucontrol sound
+
+# For gnome-clocks
+dev-libs/libgweather vala
+gui-libs/libadwaita vala

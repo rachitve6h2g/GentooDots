@@ -2,4 +2,6 @@ media-sound/pulseaudio-daemon
 app-text/zathura-pdf-poppler
 virtual/w3m
 www-client/elinks
-<=x11-libs/gtk+-3.24.42-r1
+www-client/links
+
+xfce-base/xfwm4
