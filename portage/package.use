@@ -1,0 +1,97 @@
+# Installkernel and other stuff
+sys-kernel/gentoo-kernel modules-compress
+sys-kernel/linux-firmware compress-zstd savedconfig
+sys-kernel/installkernel ugrd efistub -dracut
+sys-apps/systemd cryptsetup
+
+# You'll need this
+app-admin/sudo offensive -sendmail
+
+# Pipewire sound-server
+media-video/pipewire sound-server
+
+# For eselect-repository
+net-misc/aria2 xmlrpc metalink bittorrent
+www-client/uget aria2
+
+# Disable transfer support for bluetooth
+net-wireless/bluez -obex -mesh
+
+# Enable jpeg support in swaybg
+gui-apps/swaybg gdk-pixbuf
+x11-libs/gdk-pixbuf jpeg
+
+# Build without zfs support coz I use btrfs
+sys-process/bottom -zfs
+
+# For Libnotify (without mako installed first, See Notes in README.md)
+# x11-libs/gtk+ X
+# media-libs/libepoxy X
+# x11-libs/cairo X
+# media-libs/libglvnd X
+
+# For qutebrowser
+www-client/qutebrowser widevine
+dev-qt/qtwebengine -pdfium
+dev-qt/qtwayland compositor
+dev-python/pyqt6 qml webchannel
+dev-qt/qtbase icu
+dev-libs/libxml2 icu
+sys-libs/zlib minizip
+media-libs/libglvnd X
+
+# Nerdfonts
+media-fonts/nerdfonts iosevkaterm
+
+# Build nodejs with npm package manager for use in neovim
+net-libs/nodejs npm
+
+# Build imv without freeimage, freeimage not needed
+media-gfx/imv jpeg png svg -freeimage
+
+# Build ffmpegthumbnailer with jpeg and png support
+media-video/ffmpeg webp vorbis svg openh264
+media-video/ffmpegthumbnailer jpeg png
+
+# For xdg-utils
+app-text/xmlto text
+
+# Use policykit for upower
+sys-power/upower policykit
+
+# noto fonts for some important stuff
+media-fonts/noto cjk
+
+# For zathura
+app-text/zathura-meta pdf epub cb
+
+# Libcanberra sounds 
+media-libs/libcanberra alsa
+
+# For thunar
+xfce-base/thunar udisks -trash-panel-plugin
+gnome-base/gvfs udisks mtp
+x11-libs/gtk+ X 
+# dev-libs/libdbusmenu gtk3 # required for trash-panel-plugin
+media-libs/libepoxy X
+x11-libs/cairo X
+app-crypt/gcr gtk
+dev-python/pycairo X
+xfce-base/tumbler epub ffmpeg jpeg pdf
+app-text/poppler cairo
+
+# Without this cmus won't read ogg/opus files
+media-sound/cmus ffmpeg
+
+# Of course we gotta show off
+app-misc/fastfetch imagemagick chafa
+# media-gfx/imagemagick xml
+
+# NOTE: remove the X flag once qutebrowser 
+# becomes full wayland
+# For vaapi stuff
+media-libs/libva X
+media-libs/mesa -vaapi
+
+# Libreoffice-bin but with java support
+app-office/libreoffice-bin java

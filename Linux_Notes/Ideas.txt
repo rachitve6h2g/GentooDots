@@ -1,1 +1,0 @@
-- Waybar module that shows the number of compile jobs still running

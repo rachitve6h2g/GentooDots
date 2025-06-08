@@ -1,5 +1,0 @@
-- Learn about the q utils in app-portage/portage-utils
-- Move to gruvbox material-light
-- Get tuir (terminal reddit) up and working
-- Get neomutt for emails
-- Write a notification for 80% bat and 30%

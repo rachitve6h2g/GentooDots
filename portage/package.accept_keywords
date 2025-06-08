@@ -1,0 +1,34 @@
+app-portage/fetchcommandwrapper
+
+# For efistub
+sys-kernel/installkernel
+sys-boot/uefi-mkconfig
+app-emulation/virt-firmware
+
+# For sway
+app-misc/brightnessctl::guru
+gui-apps/swaylock-effects::guru
+x11-misc/i3status-rust::guru
+gui-apps/uwsm::gentoo
+gui-apps/wlsunset::guru
+app-misc/cliphist::guru
+
+# Nerdfonts
+media-fonts/nerdfonts::guru
+
+# It's zoxide as alaways
+app-shells/zoxide
+
+# Yazi file-manager, the latest
+# Requires rustc 1.86.0 or something like that
+app-misc/yazi::guru
+
+# LazyGit had to happen
+dev-util/github-cli
+dev-vcs/lazygit::guru
+
+# MPV-MPRIS protocol
+mpv-plugin/mpv-mpris::guru
+
+# For bluetui
+net-wireless/bluetui::lamdness
