@@ -10,7 +10,6 @@ app-misc/brightnessctl
 app-misc/cliphist
 app-misc/fastfetch
 app-misc/resolve-march-native
-app-misc/rlwrap
 app-misc/trash-cli
 app-misc/yazi
 app-portage/eix
@@ -26,9 +25,7 @@ app-text/ansifilter
 app-text/wgetpaste
 app-text/zathura-meta
 dev-lang/sassc
-dev-lisp/sbcl
 dev-util/github-cli
-dev-util/gtk-update-icon-cache
 dev-vcs/lazygit
 gnome-base/gvfs
 gnome-extra/polkit-gnome
@@ -75,7 +72,7 @@ sys-power/poweralertd
 sys-power/thermald
 sys-process/btop
 www-client/firefox:rapid
-www-client/uget
+www-client/uget	
 x11-libs/libnotify
 x11-misc/xdg-utils
 x11-terms/kitty
