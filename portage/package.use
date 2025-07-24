@@ -63,7 +63,7 @@ media-libs/vulkan-loader layers
 app-office/libreoffice-bin java
 
 # For niri
-gui-apps/waybar upower network wifi
+gui-apps/ironbar notifications cairo
 
 # For firefox
 www-client/firefox:rapid system-png hwaccel system-pipewire

@@ -19,6 +19,7 @@ gui-apps/wlsunset::guru
 app-misc/cliphist::guru
 gui-wm/niri::guru
 gui-apps/fuzzel::guru
+gui-apps/ironbar::guru
 
 # For dotfiles
 app-admin/chezmoi::guru
